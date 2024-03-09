@@ -1,0 +1,10 @@
+- Organization UI without too much creativity Which might apeal to a Bussiness 
+- SearchBar which when you search a world(of any heading of the table), it show the table options like an accordian 
+- Table with Json Data(add a jsx map fucntion to loop over data) 
+- for each record, the last column should have a collection of icons which have the following funtionality 
+	1- Add record 
+	2- Delete record 
+	3- Update record which will open up a component which you can change the values of the selected user 
+	4- Open up a leaflet / googlemap component which renders the location of the selected user 
+	5- Open up a linear chart component  powered by chart.js which renders the times the selected user have been visiting the website
+

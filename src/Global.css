@@ -1,0 +1,239 @@
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+  overflow-x: hidden;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #f5f5f5;
+  color: #000;
+  font-family: iranyekan;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  direction: rtl;
+}
+
+/* --------------Fonts-------------- */
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: bold;
+  src: url("./Assets/Fonts/IRANYekan/eot/iranyekanwebbold.eot");
+  src: url("./Assets/Fonts/IRANYekan/eot/iranyekanwebbold.eot?#iefix")
+      format("embedded-opentype"),
+    url("./Assets/Fonts/IRANYekan/woff/iranyekanwebbold.woff") format("woff"),
+    url("./Assets/Fonts/IRANYekan/ttf/iranyekanwebbold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: 100;
+  src: url("./Assets/Fonts/IRANYekan/eot/iranyekanwebthin.eot");
+  src: url("./Assets/Fonts/IRANYekan/eot/iranyekanwebthin.eot?#iefix")
+      format("embedded-opentype"),
+    url("./Assets/Fonts/IRANYekan/woff/iranyekanwebthin.woff") format("woff"),
+    url("./Assets/Fonts/IRANYekan/ttf/iranyekanwebthin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: 300;
+  src: url("./Assets/Fonts/IRANYekan/eot/iranyekanweblight.eot");
+  src: url("./Assets/Fonts/IRANYekan/eot/iranyekanweblight.eot?#iefix")
+      format("embedded-opentype"),
+    url("./Assets/Fonts/IRANYekan/woff/iranyekanweblight.woff") format("woff"),
+    url("./Assets/Fonts/IRANYekan/ttf/iranyekanweblight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: normal;
+  src: url("./Assets/Fonts/IRANYekan/eot/iranyekanwebregular.eot");
+  src: url("./Assets/Fonts/IRANYekan/eot/iranyekanwebregular.eot?#iefix")
+      format("embedded-opentype"),
+    url("./Assets/Fonts/IRANYekan/woff/iranyekanwebregular.woff") format("woff"),
+    url("./Assets/Fonts/IRANYekan/ttf/iranyekanwebregular.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: 500;
+  src: url("./Assets/Fonts/IRANYekan/eot/iranyekanwebmedium.eot");
+  src: url("./Assets/Fonts/IRANYekan/eot/iranyekanwebmedium.eot?#iefix")
+      format("embedded-opentype"),
+    url("./Assets/Fonts/IRANYekan/woff/iranyekanwebmedium.woff") format("woff"),
+    url("./Assets/Fonts/IRANYekan/ttf/iranyekanwebmedium.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: 800;
+  src: url("./Assets/Fonts/IRANYekan/eot/iranyekanwebextrabold.eot");
+  src: url("./Assets/Fonts/IRANYekan/eot/iranyekanwebextrabold.eot?#iefix")
+      format("embedded-opentype"),
+    url("./Assets/Fonts/IRANYekan/woff/iranyekanwebextrabold.woff")
+      format("woff"),
+    url("./Assets/Fonts/IRANYekan/ttf/iranyekanwebextrabold.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: 900;
+  src: url("./Assets/Fonts/IRANYekan/eot/iranyekanwebblack.eot");
+  src: url("./Assets/Fonts/IRANYekan/eot/iranyekanwebblack.eot?#iefix")
+      format("embedded-opentype"),
+    url("./Assets/Fonts/IRANYekan/woff/iranyekanwebblack.woff") format("woff"),
+    url("./Assets/Fonts/IRANYekan/ttf/iranyekanwebblack.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: 950;
+  src: url("./Assets/Fonts/IRANYekan/eot/iranyekanwebextrablack.eot");
+  src: url("./Assets/Fonts/IRANYekan/eot/iranyekanwebextrablack.eot?#iefix")
+      format("embedded-opentype"),
+    url("./Assets/Fonts/IRANYekan/woff/iranyekanwebextrablack.woff")
+      format("woff"),
+    url("./Assets/Fonts/IRANYekan/ttf/iranyekanwebextrablack.ttf")
+      format("truetype");
+}
+
+/* --------------General-------------- */
+
+section {
+  padding: 1rem 0;
+  margin-top: 2rem;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.icon {
+  z-index: 1000;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  transition: all 350ms ease;
+  color: #42424295;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px rgba(33, 33, 33, 0.2);
+}
+
+.icon:hover {
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.editing {
+  background-color: rgb(255, 255, 193) !important;
+}
+
+.row {
+  --bs-gutter-x: 0rem;
+}
+/* --------------SearchBar-------------- */
+.search-bar-section {
+  box-shadow: 2px 2px 2px 3px rgba(33, 33, 33, 0.2);
+}
+
+input {
+  background-color: #fff;
+  border: 1px solid #4980ff;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  line-height: 180%;
+  color: #212121;
+  box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.13),
+    inset 0 2px 1px 0 rgba(0, 0, 0, 0.05);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.search-icon svg {
+  border-radius: 5px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: all 350ms ease;
+}
+
+.search-bar {
+  cursor: pointer;
+}
+::placeholder {
+  opacity: 0.75;
+}
+
+.search-options {
+  border: 1px solid #4980ff;
+  transition: all 350ms ease;
+}
+
+.add-btn {
+  margin-top: 2rem;
+  margin-right: 7.5rem;
+}
+
+/* --------------Table-------------- */
+.table {
+  border: 1px solid black;
+}
+
+.table th {
+  background-position: top;
+  color: #000000;
+  background: #cad6dc;
+  border: 1px solid #000;
+  border-left-color: #1b4163;
+  border-bottom-color: #1b4163;
+}
+
+.table tr {
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.table tr:hover {
+  background-color: #e8e4e488;
+}
+.table td {
+  border-right: 1px solid #000;
+  padding: 0;
+}
+
+.table-icons li path {
+  transform: translate(10%, 10%);
+}
+
+.table-icons li svg:hover {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 0, 0.141);
+}
+
+.table-icons li svg {
+  cursor: pointer;
+}
+
+/* --------------Map-------------- */
+.leaflet-container {
+  height: 20rem;
+}
